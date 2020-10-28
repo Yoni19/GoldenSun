@@ -1,4 +1,9 @@
-Online : https://yoni19.github.io/MultiLingueFolio/
+[//]: <> (Online : https://yoni19.github.io/MultiLingueFolio/ )
+
+App powered by Yoni K. et Olivier F. (c) 2020
+
+
+
 
 
 # Getting Started with Create React App

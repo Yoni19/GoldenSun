@@ -3,26 +3,22 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import {
-    BrowserRouter as Router,
-    Route,
-    Switch,
+  
     Link
   } from "react-router-dom";
-  import { FormattedMessage } from 'react-intl';
+  import "./style.scss"
+  import studys from "../../data/studycase"
 
 const NavWorks = () => {
   return (
     <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
     <ul>
-      <li>
-      <Link to="/works/Exercices">Exercices</Link>
-      </li>
-      <li>
-      <Link to="/works/Case_study"><FormattedMessage id="works.study"/></Link>
-      </li>
-      <li>
-      <Link to="/works/Projets_concrets"><FormattedMessage id="works.project"/></Link>
-      </li>
+    {studys.map((study) => (
+				<li className="nav-item">
+					<Link to={`/works/${study.name}`}>
+						{study.nameb}
+					</Link>
+				</li>))}
     </ul>
   </nav>
  

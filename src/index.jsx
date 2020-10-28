@@ -7,13 +7,14 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Works from './Pages/Works';
-import Contact from './Pages/Contact';
+import Works from './Pages/Works'
+
 import Navbar from './components/NavBar';
 import "./sass/mystyles.scss"
 import { IntlProvider } from 'react-intl';
 import messagesFr from './translation/fr';
 import messagesEn from './translation/en';
+import StudyCase from "./Pages/StudyCase";
 
 
 const messages = {
@@ -35,15 +36,20 @@ const App = () => {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/MultiLingueFolio/">
-            <Home />
-          </Route>
-          <Route path="/works">
+
+          <Route exact path="/works">
             <Works />
           </Route>
+
+          <Route path="/works/:clientname">
+          <StudyCase />
+        </Route>
+        
+
+          <Route exact path="/">
+            <Home />
+          </Route>
+
           <Route>
             <h1>Cette page n'exite pas</h1>
           </Route>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from '../../components/Box'
+import { FormattedMessage } from 'react-intl';
 
 // About.jsx
 const About = () => {
@@ -9,14 +9,14 @@ return(
     <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title"> A propos !</h1>
+        <h1 class="title"> <FormattedMessage id="about.title" /></h1>
         <h2 class="subtitle">
-        Tu trouveras toutes les informations a mon sujet sur cette page ! 😊
+        <FormattedMessage id="about.subtitle" /> 
         </h2>
       </div>
     </div>
   </section>
-  <Box/>
+
 </div>
   )
 }

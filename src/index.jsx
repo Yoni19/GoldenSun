@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React,{ useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import {
   BrowserRouter as Router,
@@ -28,11 +28,19 @@ const App = () => {
 const switchlanguage = () => {
   if (language === "en") {
     setLanguage("fr")
+    localStorage.setItem('language','fr')
   }else {
     setLanguage("en")
-
+    localStorage.setItem('language','en')
   }
 } 
+
+useEffect(() =>{
+
+  if (localStorage.getItem('language')){
+    setLanguage(localStorage.getItem('language'))
+  }
+},[]);
 
   return (
 

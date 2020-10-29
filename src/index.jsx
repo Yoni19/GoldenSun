@@ -24,13 +24,23 @@ const messages = {
 
 const App = () => {
   const [language, setLanguage] = useState('fr');
+
+const switchlanguage = () => {
+  if (language === "en") {
+    setLanguage("fr")
+  }else {
+    setLanguage("en")
+
+  }
+} 
+
   return (
 
     <IntlProvider locale={language} messages={messages[language]}>
     <Router>
       
       <div>
-        <Navbar />
+        <Navbar switchlanguage={switchlanguage} language={language}/>
 
         <Switch>
           <Route path="/about">
@@ -60,5 +70,7 @@ const App = () => {
 
   );
 }
+
+export default App;
 
 ReactDOM.render(<App />, document.querySelector("#root"));

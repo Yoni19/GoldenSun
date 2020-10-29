@@ -8,11 +8,13 @@ import {
     Switch,
     Link
   } from "react-router-dom";
+  import App from '../../index'
   
   
 
 
-const NavBar = () => {
+const NavBar = ({switchlanguage,language}) => {
+
 
   return (
 
@@ -32,14 +34,16 @@ const NavBar = () => {
       </div>
       <div class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
+        <div class="buttons" onClick={switchlanguage}>
+          {language === 'fr' && (<a class="button is-primary" >
             <strong>Anglais</strong>
-          </a>
-          <a class="button is-light">
+          </a>)}
+          {language === 'en' && (<a class="button is-light">
             Français
-          </a>
+          </a>)}
+          
         </div>
+
       </div>
     </div>
  </nav>

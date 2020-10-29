@@ -52,7 +52,7 @@ const switchlanguage = () => {
           </Route>
 
           <Route path="/works/:clientname">
-          <StudyCase />
+          <StudyCase language={language} />
         </Route>
         
 

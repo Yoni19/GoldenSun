@@ -1,6 +1,10 @@
 {
     "home.title": "Confiez vos rêves à des experts du Web",
     "home.subtitle": "Grâce à notre savoir-faire, notre expérience et notre écoute, nous accompagnons nos clients dans la création de site internet: étude, UX, conception, design, développement, SEO.  Notre agence web est capable de répondre à tous vos besoins et d'élaborer une véritable stratégie digitale.",
-    "home.content": "Conseil, assistance à maîtrise d'ouvrage (AMOA) :  Webistic vous accompagne afin de construire une stratégie digitale centrée sur vos clients et apte à accroître votre chiffre d’affaire et part de marché : définir vos enjeux stratégiques, générer de l’attraction,faire grandir votre marque sur le digital,permetre à vos utilisateurs de vivre une véritable expérience,générer du business"
-  
+    "home.content": "Conseil, assistance à maîtrise d'ouvrage (AMOA) :",
+    "home.content1": "Webistic vous accompagne afin de construire une stratégie digitale centrée sur vos clients et apte à accroître votre chiffre d’affaire et part de marché :",
+    "home.content2": "- Définir vos enjeux stratégiques",
+    "home.content3":"- Générer de l’attraction,faire grandir votre marque sur le digital",
+    "home.content4": "- Permetre à vos utilisateurs de vivre une véritable expérience",
+    "home.content5":  "- Générer du business"
 }

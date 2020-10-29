@@ -19,9 +19,17 @@ const Home = () => {
 
       <div className="card">
         <div className="card-content">
-          <p className="title">
+          <h1 className="title">
           <FormattedMessage id="home.content" />
-          </p>
+          </h1>
+       
+          <h2><FormattedMessage id="home.content1" /></h2>
+          <br></br>
+          <h2><FormattedMessage id="home.content2" /></h2>
+          <h2><FormattedMessage id="home.content3" /></h2>
+          <h2><FormattedMessage id="home.content4" /></h2>
+          <h2><FormattedMessage id="home.content5" /></h2> 
+
         
         </div>
         

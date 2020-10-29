@@ -20,7 +20,7 @@ const NavBar = ({switchlanguage,language}) => {
 
 <nav className="navbar" role="navigation" aria-label="main navigation">
    <div className="navbar-brand">
-     <a className="navbar-item" href="https://i.skyrock.net/4960/83984960/pics/3145650486_1_4_XnkwV8bf.jpg">
+     <a className="navbar-item" href="https://github.com/Yoni19/FakeAgency">
       <img src={logo} width='110' ></img>
       </a>
 

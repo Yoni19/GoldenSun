@@ -27,7 +27,7 @@ const NavBar = ({switchlanguage,language}) => {
     </div>
      <div id="navbarBasicExample" class="navbar-menu">
         <div className="navbar-start">
-           <Link to="/" className="navbar-item" >Home</Link>
+           <Link to="/FakeAgency/" className="navbar-item" >Home</Link>
            <Link to="/about" className="navbar-item">About</Link>
            <Link to="/works" className="navbar-item">Works</Link>
         </div>

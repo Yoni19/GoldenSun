@@ -5,20 +5,20 @@ import "./sass/mystyles.scss";
 
 const App = () => {
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%", marginTop:"20px", marginBottom:"25px" }}>
       <div
         style={{
           textAlign: "center",
         }}
       >
-        <img src="https://cdn.discordapp.com/attachments/708360756680196167/834007554681602058/Logo_WW_Sans_Fond.png" />
+        <img src="https://cdn.discordapp.com/attachments/709061813840642079/834003870844977152/Promo_Event.png" />
       </div>
-      <section class="hero is-warning">
+      {/* <section class="hero is-warning">
         <div class="hero-body">
           <p class="title">GoldenSunTv</p>
           <p class="subtitle"> First Anniversary</p>
         </div>
-      </section>
+      </section> */}
 
       <iframe
         width="100%"

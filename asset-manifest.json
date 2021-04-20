@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GoldenSun/static/css/main.c2654f76.chunk.css",
+    "main.js": "/GoldenSun/static/js/main.40e5a54d.chunk.js",
+    "main.js.map": "/GoldenSun/static/js/main.40e5a54d.chunk.js.map",
+    "runtime-main.js": "/GoldenSun/static/js/runtime-main.9be32e87.js",
+    "runtime-main.js.map": "/GoldenSun/static/js/runtime-main.9be32e87.js.map",
+    "static/js/2.7a515bd0.chunk.js": "/GoldenSun/static/js/2.7a515bd0.chunk.js",
+    "static/js/2.7a515bd0.chunk.js.map": "/GoldenSun/static/js/2.7a515bd0.chunk.js.map",
+    "index.html": "/GoldenSun/index.html",
+    "static/css/main.c2654f76.chunk.css.map": "/GoldenSun/static/css/main.c2654f76.chunk.css.map",
+    "static/js/2.7a515bd0.chunk.js.LICENSE.txt": "/GoldenSun/static/js/2.7a515bd0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9be32e87.js",
+    "static/js/2.7a515bd0.chunk.js",
+    "static/css/main.c2654f76.chunk.css",
+    "static/js/main.40e5a54d.chunk.js"
+  ]
+}

@@ -1,6 +1,6 @@
-Online : https://yoni19.github.io/FakeAgency/
 
-App powered by Yoni K. et Olivier F. (c) 2020
+
+App powered by Yoni
 
 
 

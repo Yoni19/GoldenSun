@@ -1,7 +1,0 @@
-{
-    "error.field": "Please fill in all the fields",
-    "error.password.numberchar": "Your password must be at least 8 characters long",
-    "error.password.match": "Your 2 passwords do not match",
-    "error.mail.format": "Wrong email format",
-    "error.tel.format": "Wrong phone number format"
-}

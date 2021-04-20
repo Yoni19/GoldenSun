@@ -1,83 +1,35 @@
-import React,{ useEffect, useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Works from './Pages/Works'
 
-import Navbar from './components/NavBar';
-import "./sass/mystyles.scss"
-import { IntlProvider } from 'react-intl';
-import messagesFr from './translation/fr';
-import messagesEn from './translation/en';
-import StudyCase from "./Pages/StudyCase";
-
-
-const messages = {
-  fr: messagesFr,
-  en: messagesEn,
-};
+import "./sass/mystyles.scss";
 
 const App = () => {
-  const [language, setLanguage] = useState('fr');
-
-const switchlanguage = () => {
-  if (language === "en") {
-    setLanguage("fr")
-    localStorage.setItem('language','fr')
-  }else {
-    setLanguage("en")
-    localStorage.setItem('language','en')
-  }
-} 
-
-useEffect(() =>{
-
-  if (localStorage.getItem('language')){
-    setLanguage(localStorage.getItem('language'))
-  }
-},[]);
-
   return (
-
-    <IntlProvider locale={language} messages={messages[language]}>
-    <Router>
-      
-      <div>
-        <Navbar switchlanguage={switchlanguage} language={language}/>
-
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-
-          <Route exact path="/works">
-            <Works />
-          </Route>
-
-          <Route path="/works/:clientname">
-          <StudyCase language={language} />
-        </Route>
-        
-
-          <Route exact path="/FakeAgency/">
-            <Home />
-          </Route>
-
-          <Route>
-            <h1>Cette page n'exite pas</h1>
-          </Route>
-        </Switch>
+    <div style={{ width: "100%" }}>
+      <div
+        style={{
+          textAlign: "center",
+        }}
+      >
+        <img src="https://cdn.discordapp.com/attachments/708360756680196167/834007554681602058/Logo_WW_Sans_Fond.png" />
       </div>
-    </Router>
-    </IntlProvider>
+      <section class="hero is-warning">
+        <div class="hero-body">
+          <p class="title">GoldenSunTv</p>
+          <p class="subtitle"> First Anniversary</p>
+        </div>
+      </section>
 
+      <iframe
+        width="100%"
+        height="600px"
+        src="https://www.watchisup.fr/compte-a-rebours/embed/goldensuntv-2021-04-24-21-00?backgroundcolor=&color=%23ff7f00"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
   );
-}
+};
 
 export default App;
 
